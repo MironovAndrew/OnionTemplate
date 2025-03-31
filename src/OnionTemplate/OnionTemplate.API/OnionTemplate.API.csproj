@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Requests\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnionTemplate.Application\OnionTemplate.Application.csproj" />
+    <ProjectReference Include="..\OnionTemplate.Domain\OnionTemplate.Domain.csproj" />
   </ItemGroup>
 
 </Project>

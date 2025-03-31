@@ -4,7 +4,7 @@ using MassTransit.Monitoring;
 using OpenTelemetry.Trace;
 using MassTransit.Logging;
 
-namespace OnionTemplate.API.DI.ApplicationDI;
+namespace OnionTemplate.WEB.DI.ApplicationDI;
 
 public static class MetricsExtentions
 {
@@ -13,10 +13,10 @@ public static class MetricsExtentions
         string meterName = "smirnyy";
 
         services.AddOpenTelemetry()
-            .ConfigureResource(resourse => resourse.AddService(nameof(API)))
+            .ConfigureResource(resourse => resourse.AddService(nameof(WEB)))
         //prometheus
             .WithMetrics(metric => metric
-                .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService(nameof(API)))
+                .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService(nameof(WEB)))
                 .AddAspNetCoreInstrumentation()
                 .AddHttpClientInstrumentation()
                 .AddRuntimeInstrumentation()
@@ -26,7 +26,7 @@ public static class MetricsExtentions
             .WithTracing(tracingBuilder =>
             {
                 tracingBuilder
-                    .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService(nameof(API)))
+                    .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService(nameof(WEB)))
                     .AddAspNetCoreInstrumentation()
                     .AddHttpClientInstrumentation()
                     //.AddNpgsql()

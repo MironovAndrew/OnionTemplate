@@ -1,4 +1,4 @@
-﻿namespace OnionTemplate.API.DI.AppDI;
+﻿namespace OnionTemplate.WEB.DI.AppDI;
 
 public static class CORSExtentions
 {

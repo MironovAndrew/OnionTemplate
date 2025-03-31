@@ -1,6 +1,6 @@
-﻿using OnionTemplate.API.DI.AppDI;
+﻿using OnionTemplate.WEB.DI.AppDI;
 
-namespace OnionTemplate.API.DI;
+namespace OnionTemplate.WEB.DI;
 
 public static class AppDependencyInjections
 {

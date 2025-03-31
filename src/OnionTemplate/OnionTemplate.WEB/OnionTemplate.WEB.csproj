@@ -35,5 +35,9 @@
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.14" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\OnionTemplate.API\OnionTemplate.API.csproj" />
+	  <ProjectReference Include="..\OnionTemplate.Application\OnionTemplate.Application.csproj" />
+	</ItemGroup>
 
 </Project>

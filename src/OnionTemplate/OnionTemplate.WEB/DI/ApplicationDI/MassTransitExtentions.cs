@@ -1,4 +1,4 @@
-﻿namespace OnionTemplate.API.DI.ApplicationDI;
+﻿namespace OnionTemplate.WEB.DI.ApplicationDI;
 public static class MassTransitExtentions
 {
     public static IServiceCollection AddMassTransitConfig(

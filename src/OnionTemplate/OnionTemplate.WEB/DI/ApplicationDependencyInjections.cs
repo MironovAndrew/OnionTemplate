@@ -1,9 +1,8 @@
 ﻿using FluentValidation.AspNetCore;
-using OnionTemplate.API.DI.ApplicationDI;
 using OnionTemplate.WEB.DI.ApplicationDI;
 using SharpGrip.FluentValidation.AutoValidation.Mvc.Extensions;
 
-namespace OnionTemplate.API.DI;
+namespace OnionTemplate.WEB.DI;
 
 public static class ApplicationDependencyInjections
 {
@@ -13,6 +12,7 @@ public static class ApplicationDependencyInjections
         services.AddRedis(configuration);
         services.AddMassTransitConfig(configuration);
         services.AddOpenTelemetryMetrics();
+        services.AddControllers();
         services.AddCors();
         services.ApplyAuthenticationAuthorizeConfiguration(configuration);
         services.AddSwaggerGetWithAuthentication();

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace PetHome.Volunteers.Infrastructure.DI;
+namespace OnionTemplate.Infrastructure.DI;
 public static class InfrastructureDependencyInjection
 {
     public static IServiceCollection AddInfrastructure(

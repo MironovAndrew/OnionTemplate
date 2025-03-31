@@ -1,4 +1,4 @@
-using OnionTemplate.API.DI;
+﻿using OnionTemplate.WEB.DI;
 
 var builder = WebApplication.CreateBuilder(args); 
 
@@ -21,7 +21,7 @@ app.AddAppDependencyInjection();
 
 app.UseHttpsRedirection();
 app.UseAuthentication();  
-app.UseAuthorization(); 
-//app.MapControllers();
+app.UseAuthorization();
+app.MapControllers();
 
 app.Run();

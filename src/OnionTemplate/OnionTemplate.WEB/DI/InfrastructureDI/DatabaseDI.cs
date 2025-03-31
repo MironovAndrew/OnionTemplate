@@ -1,4 +1,4 @@
-﻿namespace OnionTemplate.API.DI.InfrastructureDI;
+﻿namespace OnionTemplate.WEB.DI.InfrastructureDI;
 
 public static class DatabaseDI
 {

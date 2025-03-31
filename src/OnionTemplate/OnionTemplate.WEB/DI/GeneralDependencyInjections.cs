@@ -1,4 +1,4 @@
-﻿namespace OnionTemplate.API.DI;
+﻿namespace OnionTemplate.WEB.DI;
 
 public static class GeneralDependencyInjections
 {

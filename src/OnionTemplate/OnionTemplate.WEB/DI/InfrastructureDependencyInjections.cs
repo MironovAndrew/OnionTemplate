@@ -1,6 +1,6 @@
-﻿using OnionTemplate.API.DI.InfrastructureDI;
+﻿using OnionTemplate.WEB.DI.InfrastructureDI;
 
-namespace OnionTemplate.API.DI;
+namespace OnionTemplate.WEB.DI;
 
 public static class InfrastructureDependencyInjections
 {
