@@ -1,6 +1,11 @@
+### Создание проекта на основе template
+`dotnet new template-short-name -n ProjectName`
+
+### Посмотреть список templates
+`dotnet new list`
+
 ### Создание template (удалите лишние файлы): 
-`dotnet new --install --force .`
-### Создание проекта на основе template:
+`dotnet new --install --force .` <br>
 1.) В корне проекта создать папку `.template.config` <br>
 2.) Внтури создать файл `template.json` <br>
 3.) Пример файла template.json <br>
@@ -27,9 +32,6 @@
 
 4.) Создание проекта на основе template  <br>
 `dotnet new template -n template-short-name`    
-
-### Посмотреть список templates
-`dotnet new list`
 
 ### Публикация в NuGet
 1.) Добавить в .csproj:
